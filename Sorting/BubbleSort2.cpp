@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    //to convert into increasing order
+    //to convert into decreasing order
     int arr[1000];
     int n;
     cout<<"Enter the size of array: ";
@@ -15,7 +15,7 @@ int main(){
         bool swapped = 0;
         for( int j=0;j<=i;j++)
         {
-            if (arr[j]>arr[j+1])
+            if (arr[j]<arr[j+1])
             {
                 swapped = 1;
                 swap(arr[j],arr[j+1]);
@@ -29,6 +29,5 @@ int main(){
         cout<<arr[i]<<" ";
     }
 }
-
 
 
